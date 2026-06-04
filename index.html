@@ -221,14 +221,22 @@
   .foot-col h4{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:18px;font-family:'Sora';font-weight:600}
   .foot-col a,.foot-col p{display:block;font-size:14.5px;color:var(--text);margin-bottom:11px;transition:color .2s}
   .foot-col a:hover{color:var(--accent)}
-  .foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:28px;font-size:13px;color:var(--muted)}
+  .insta-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-top:12px;padding:11px 20px;
+    background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+    color:#fff !important;font-size:13px;font-weight:600;
+    letter-spacing:.5px;text-transform:uppercase;
+    border-radius:2px;transition:opacity .2s;
+  }
+  .insta-btn:hover{opacity:.85}
 
   /* ---------- reveal ---------- */
   .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
 
   /* ---------- responsive ---------- */
-  @media(max-width:900px){
+  .foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:28px;font-size:13px;color:var(--muted)}
     .grid{grid-template-columns:repeat(2,1fr)}
     .band-grid{grid-template-columns:repeat(2,1fr)}
     .visit-grid{grid-template-columns:1fr;gap:44px}
@@ -264,6 +272,9 @@
       <a href="#sports">Sports</a>
       <a href="#why">Why Us</a>
       <a href="#visit">Visit</a>
+      <a href="https://www.instagram.com/warehousearenaa" target="_blank" rel="noopener" title="Follow us on Instagram" style="display:flex;align-items:center;color:var(--muted);transition:color .2s" onmouseover="this.style.color='#ccff00'" onmouseout="this.style.color='var(--muted)'">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
       <a href="https://wa.me/923298454567?text=Hi%20WareHouse%20Arena%2C%20I%27d%20like%20to%20book%20a%20court." target="_blank" rel="noopener" class="btn"><span>Book a Court</span></a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -418,11 +429,22 @@
           <p>DHA Rahbar Phase 1, Lahore</p>
           <p>Open daily · till 2 AM</p>
         </div>
+        <div class="foot-col">
+          <h4>Follow Us</h4>
+          <a href="https://www.instagram.com/warehousearenaa" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:10px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            @warehousearenaa
+          </a>
+          <a href="https://www.instagram.com/warehousearenaa" target="_blank" rel="noopener" class="insta-btn">Follow on Instagram</a>
+        </div>
       </div>
     </div>
     <div class="foot-bot">
       <span>© 2026 WareHouse Arena, Lahore. All rights reserved.</span>
-      <span>Where Lahore plays.</span>
+      <a href="https://www.instagram.com/warehousearenaa" target="_blank" rel="noopener" style="color:var(--accent);display:flex;align-items:center;gap:8px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @warehousearenaa
+      </a>
     </div>
   </div>
 </footer>
